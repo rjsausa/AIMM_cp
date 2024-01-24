@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+/* GENERAL STYLING */
+html {
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* PROJECT LIST (When No Projects Available) */
+.noproject-wrapper {
+
+}
