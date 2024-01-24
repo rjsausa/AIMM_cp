@@ -7,7 +7,7 @@ def project_list(req):
 
 def project_detail(req, project_slug):
     project = get_object_or_404(Project, slug=project_slug)
-    return render(req, 'aimm/project-detail.html', {'project':project, 'expense_list': project.expenses.all()'})
+    return render(req, 'aimm/project-detail.html', {'project':project, 'expense_list': project.expenses.all()})
 
 class ProjectCreateView(CreateView):
     model = Project

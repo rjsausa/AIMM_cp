@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
 
-/* GENERAL STYLING */
+/* ------------ GENERAL STYLING ------------ */
 html {
     font-family: 'Hedvig Letters Serif', serif;
 }
@@ -16,7 +16,7 @@ h1, h6 {
     margin: 0!important;
 }
 
-/* PROJECT LIST (When No Projects Available) */
+/* ------------ PROJECT LIST (When No Projects Available) ------------ */
 .noproject-wrapper {
     margin-top: 250px;
     padding: 80px 0px;
@@ -29,7 +29,16 @@ h1, h6 {
     margin-bottom: 50px;
 }
 
-/* PROJECT DETAIL STATISTICS */
+/* ------------ PROJECT ADD VIEW ------------ */
+form ul li.category {
+    display: inline-block;
+    background-color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+
+/* ------------ PROJECT DETAIL STATISTICS ------------ */
 
 .section-stats h1 {
     font-size: 4vw;
@@ -42,7 +51,7 @@ h1, h6 {
     }
 }
 
-/* PROJECT DETAIL EXPENSES */
+/* ------------ PROJECT DETAIL EXPENSES ------------ */
 .section-expenses button {
     padding: 0px 40px;
     font-weight: bold;

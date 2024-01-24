@@ -87,7 +87,11 @@ WSGI_APPLICATION = 'aimm_cp.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600)
+    'default': dj_database_url.config(conn_max_age=600),
+    # 'default' : {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'DISABLE_SERVER_SIDE_CURSORS': True,
+    # }
     }
 
 

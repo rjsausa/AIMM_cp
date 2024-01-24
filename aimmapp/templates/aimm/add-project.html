@@ -3,7 +3,37 @@
 
 {% block content %}
 
+<div class="container">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <label for="categoryInput">Expense Cateogries (Press Enter after every entry)</label>
+        <input type="text" name="categoryInput" id="categoryInput">
+        <input type="hidden" name="cateogriesString">
 
+        <ul id="categoriesContainer">
+            <li class="category">
+                <span class="name">Sample</span>
+                <span onclick="removeCategory(this)" class="btnRemove bold">X</span>
+            </li>
+
+            <li class="category">
+                <span class="name">Sample</span>
+                <span onclick="removeCategory(this)" class="btnRemove bold">X</span>
+            </li>
+
+            <li class="category">
+                <span class="name">Sample</span>
+                <span onclick="removeCategory(this)" class="btnRemove bold">X</span>
+            </li>
+
+
+        </ul>
+
+        <button type="submit" class="btn">Save Project</button>        
+
+    </form>
+</div>
 
 
 
